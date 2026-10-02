@@ -18,7 +18,10 @@ public class CorsConfig {
                 new CorsConfiguration();
 
         configuration.setAllowedOrigins(
-                List.of("http://localhost:5173")
+                List.of(
+                        "https://zidio-keystone-1.onrender.com",
+                        "http://localhost:5173"
+                )
         );
 
         configuration.setAllowedMethods(
