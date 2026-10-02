@@ -1,0 +1,328 @@
+.technicians-page {
+    width: 100%;
+}
+
+.technicians-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.technicians-header h2 {
+    margin: 0;
+    font-size: 26px;
+    color: #111827;
+}
+
+.technicians-header p {
+    margin: 6px 0 0;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+.technician-count {
+    background: white;
+    border: 1px solid #e5e7eb;
+    padding: 12px 18px;
+    border-radius: 8px;
+    color: #4b5563;
+    font-size: 14px;
+}
+
+.technician-count strong {
+    color: #111827;
+}
+
+/* Table */
+
+.technicians-table-container {
+    background: white;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    overflow-x: auto;
+}
+
+.technicians-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.technicians-table th {
+    background: #f9fafb;
+    padding: 15px;
+    text-align: left;
+    font-size: 13px;
+    color: #4b5563;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.technicians-table td {
+    padding: 15px;
+    border-bottom: 1px solid #f1f5f9;
+    font-size: 14px;
+    color: #374151;
+}
+
+.technicians-table tbody tr:hover {
+    background: #f9fafb;
+}
+
+/* Role */
+
+.technician-role-badge {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background: #dbeafe;
+    color: #1d4ed8;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+/* Permission count */
+
+.permission-count {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background: #f3f4f6;
+    color: #374151;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* View button */
+
+.view-technician-button {
+    padding: 7px 14px;
+    border: none;
+    border-radius: 6px;
+    background: #2563eb;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.view-technician-button:hover {
+    background: #1d4ed8;
+}
+
+/* Empty */
+
+.empty-technicians {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.empty-technicians h3 {
+    margin: 0 0 8px;
+    color: #374151;
+}
+
+.empty-technicians p {
+    margin: 0;
+    color: #6b7280;
+}
+
+/* Error */
+
+.technician-error {
+    color: #dc2626;
+    background: #fef2f2;
+    padding: 12px 15px;
+    border-radius: 7px;
+    display: inline-block;
+}
+
+.retry-technicians-button {
+    display: block;
+    margin-top: 10px;
+    padding: 9px 16px;
+    border: none;
+    border-radius: 7px;
+    background: #2563eb;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.retry-technicians-button:hover {
+    background: #1d4ed8;
+}
+
+/* Modal */
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(17, 24, 39, 0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 20px;
+}
+
+.technician-modal {
+    width: 100%;
+    max-width: 650px;
+    max-height: 90vh;
+    overflow-y: auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+.technician-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 22px 24px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.technician-modal-header h3 {
+    margin: 0;
+    color: #111827;
+    font-size: 20px;
+}
+
+.technician-modal-header p {
+    margin: 5px 0 0;
+    color: #6b7280;
+    font-size: 13px;
+}
+
+.modal-close-button {
+    width: 34px;
+    height: 34px;
+    border: none;
+    border-radius: 6px;
+    background: #f3f4f6;
+    color: #374151;
+    font-size: 22px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.modal-close-button:hover {
+    background: #e5e7eb;
+}
+
+/* Details */
+
+.technician-details {
+    padding: 24px;
+}
+
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 13px 0;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.detail-row span {
+    color: #6b7280;
+    font-size: 14px;
+}
+
+.detail-row strong {
+    color: #111827;
+    font-size: 14px;
+    text-align: right;
+}
+
+/* Permissions */
+
+.permissions-section {
+    margin-top: 25px;
+}
+
+.permissions-section h4 {
+    margin: 0 0 14px;
+    color: #111827;
+    font-size: 16px;
+}
+
+.permissions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.permission-item {
+    padding: 12px 14px;
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+}
+
+.permission-item strong {
+    display: block;
+    color: #374151;
+    font-size: 13px;
+}
+
+.permission-item span {
+    display: block;
+    margin-top: 4px;
+    color: #6b7280;
+    font-size: 12px;
+}
+
+/* Modal actions */
+
+.technician-modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 18px 24px;
+    border-top: 1px solid #e5e7eb;
+}
+
+.modal-cancel-button {
+    padding: 9px 17px;
+    border: none;
+    border-radius: 7px;
+    background: #e5e7eb;
+    color: #374151;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.modal-cancel-button:hover {
+    background: #d1d5db;
+}
+
+/* Loading */
+
+.technician-loading-modal {
+    background: white;
+    padding: 25px 35px;
+    border-radius: 10px;
+}
+
+.technician-loading-modal p {
+    margin: 0;
+    color: #374151;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+
+    .technicians-header {
+        align-items: flex-start;
+        gap: 15px;
+        flex-direction: column;
+    }
+
+    .technicians-table {
+        min-width: 850px;
+    }
+
+}

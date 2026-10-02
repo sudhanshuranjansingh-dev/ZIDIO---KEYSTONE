@@ -1,0 +1,415 @@
+.work-orders-page {
+    width: 100%;
+}
+
+/* =========================================================
+   Header
+========================================================= */
+
+.work-orders-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.work-orders-header h2 {
+    margin: 0;
+    font-size: 28px;
+    color: #111827;
+}
+
+.work-orders-header p {
+    margin: 6px 0 0;
+    color: #6b7280;
+}
+
+/* =========================================================
+   Create Button
+========================================================= */
+
+.create-work-order-button {
+    padding: 11px 18px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.create-work-order-button:hover {
+    background: #1d4ed8;
+}
+
+/* =========================================================
+   Table Container
+========================================================= */
+
+.work-orders-table-container {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    overflow-x: auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04);
+}
+
+.work-orders-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.work-orders-table th {
+    background: #f9fafb;
+    padding: 15px;
+    text-align: left;
+    font-size: 13px;
+    color: #374151;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.work-orders-table td {
+    padding: 15px;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 14px;
+    color: #374151;
+}
+
+.work-orders-table tbody tr:hover {
+    background: #f9fafb;
+}
+
+/* =========================================================
+   Priority
+========================================================= */
+
+.priority-badge {
+    display: inline-block;
+    padding: 5px 9px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.priority-low {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.priority-medium {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.priority-high {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.priority-urgent {
+    background: #fecaca;
+    color: #7f1d1d;
+}
+
+/* =========================================================
+   Status
+========================================================= */
+
+.status-badge {
+    display: inline-block;
+    padding: 5px 9px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.status-open {
+    background: #dbeafe;
+    color: #1e40af;
+}
+
+.status-assigned {
+    background: #e0e7ff;
+    color: #3730a3;
+}
+
+.status-in_progress {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.status-on_hold {
+    background: #f3e8ff;
+    color: #6b21a8;
+}
+
+.status-completed {
+    background: #dcfce7;
+    color: #166534;
+}
+
+/* =========================================================
+   Action Buttons
+========================================================= */
+
+.work-order-actions {
+    display: flex;
+    gap: 7px;
+    flex-wrap: wrap;
+}
+
+.work-order-actions button {
+    padding: 7px 11px;
+    border: none;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* View */
+
+.view-work-order-button {
+    background: #e0f2fe;
+    color: #0369a1;
+}
+
+.view-work-order-button:hover {
+    background: #bae6fd;
+}
+
+/* Edit */
+
+.edit-work-order-button {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.edit-work-order-button:hover {
+    background: #fde68a;
+}
+
+/* Assign */
+
+.assign-work-order-button {
+    background: #ede9fe;
+    color: #6d28d9;
+}
+
+.assign-work-order-button:hover {
+    background: #ddd6fe;
+}
+
+/* Status */
+
+.status-work-order-button {
+    background: #dbeafe;
+    color: #1d4ed8;
+}
+
+.status-work-order-button:hover {
+    background: #bfdbfe;
+}
+
+/* =========================================================
+   DELETE BUTTON - RED
+========================================================= */
+
+.delete-work-order-button {
+    background: #dc2626;
+    color: white;
+}
+
+.delete-work-order-button:hover {
+    background: #b91c1c;
+}
+
+.delete-work-order-button:active {
+    background: #991b1b;
+}
+
+/* =========================================================
+   Empty State
+========================================================= */
+
+.empty-work-orders {
+    padding: 50px;
+    text-align: center;
+}
+
+.empty-work-orders h3 {
+    margin: 0 0 8px;
+    color: #111827;
+}
+
+.empty-work-orders p {
+    margin: 0;
+    color: #6b7280;
+}
+
+/* =========================================================
+   Error
+========================================================= */
+
+.work-orders-error {
+    padding: 20px;
+    background: #fee2e2;
+    color: #991b1b;
+    border-radius: 8px;
+}
+
+/* =========================================================
+   Modal
+========================================================= */
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 1000;
+}
+
+.modal {
+    width: 500px;
+    max-width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.modal h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #111827;
+}
+
+/* =========================================================
+   Form
+========================================================= */
+
+.modal form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal label {
+    margin-bottom: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #374151;
+}
+
+.modal input,
+.modal textarea,
+.modal select {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 15px;
+
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+
+    outline: none;
+}
+
+.modal input:focus,
+.modal textarea:focus,
+.modal select:focus {
+    border-color: #2563eb;
+}
+
+.modal textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* =========================================================
+   Modal Buttons
+========================================================= */
+
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.save-button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 7px;
+    background: #2563eb;
+    color: white;
+    font-weight: 600;
+}
+
+.save-button:hover {
+    background: #1d4ed8;
+}
+
+.cancel-button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 7px;
+    background: #e5e7eb;
+    color: #374151;
+    font-weight: 600;
+}
+
+.cancel-button:hover {
+    background: #d1d5db;
+}
+
+/* =========================================================
+   Work Order Details
+========================================================= */
+
+.work-order-details {
+    background: #f9fafb;
+    padding: 18px;
+    border-radius: 8px;
+}
+
+.work-order-details p {
+    margin: 10px 0;
+    color: #374151;
+}
+
+/* =========================================================
+   Responsive
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .work-orders-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .modal {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .work-orders-table th,
+    .work-orders-table td {
+        padding: 10px;
+    }
+
+}
