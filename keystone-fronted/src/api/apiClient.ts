@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const apiClient = axios.create({
-    baseURL: "http://localhost:8080",
+    baseURL: "https://zidio-keystone-1-project.onrender.com",
 
     headers: {
         "Content-Type": "application/json",
